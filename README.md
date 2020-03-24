@@ -18,7 +18,14 @@ Once built and deployed, you can tweak and update the DeploymentConfig to suit t
 
 ## Configuration
 
-Configuration is applied to the process via environment variables on the DeploymentConfig. ALter the BOINC_CMD_LINE_OPTIONS environment variable to configure the project you want BOINC to connect with.
+Configuration is applied to the process via environment variables on the DeploymentConfig.
+
+* TZ - Timezone the container will run as
+* BOINC_GUI_RPC_PASSWORD - Password for remote management
+* BOINC_REMOTE_HOST - IP to listen for remote management requests
+* BOINC_CMD_LINE_OPTIONS - Directly configure the BOINC process with its various command line options
+
+Once done, you may end up with something like this:
 
 ```
           env:
