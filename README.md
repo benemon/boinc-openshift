@@ -6,11 +6,11 @@ Artifacts to build and run the BOINC client on OpenShift Container Platform with
 
 You can either:
 
-* `oc new-app boinc-client https://github.com/benemon/boinc-openshift`
+* `oc new-app boinc-client https://github.com/benemon/boinc-openshift.git`
 
 Or, if you want to tweak the Dockerfile:
 
-* `git clone https://github.com/benemon/boinc-openshift`
+* `git clone https://github.com/benemon/boinc-openshift.git`
 * `oc new-build --name=boinc-client --binary=true`
 * `oc new-app boinc-client:latest`
 
