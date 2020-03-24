@@ -11,7 +11,9 @@ You can either:
 Or, if you want to tweak the Dockerfile:
 
 * `git clone https://github.com/benemon/boinc-openshift.git`
+* `cd boinc-openshift`
 * `oc new-build --name=boinc-client --binary=true`
+* `oc start-build boinc-client --from-dir=.`
 * `oc new-app boinc-client:latest`
 
 Once built and deployed, you can tweak and update the DeploymentConfig to suit the resources available in your cluster, and the quotas assigned to your projects.
