@@ -1,6 +1,6 @@
 # BOINC Client for OpenShift
 
-Artifacts to build and run the BOINC client on OpenShift Container Platform without having to resort to running the official image with the `anyuid` SCC.
+Artifacts to build and run the BOINC client on OpenShift Container Platform without having to resort to running the official image with the `anyuid` SCC. Based on work done in the [official BOINC Client Docker repository](https://github.com/BOINC/boinc-client-docker).
 
 ## Building / Deploying
 
